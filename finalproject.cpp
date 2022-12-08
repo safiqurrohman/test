@@ -17,6 +17,7 @@ void keluar();
 void rawat();
 void kwitansi();
 void konsultasi();
+void callcenter();
 int menu, w, sisa=4, keluhan[16];
 
 struct node
@@ -347,27 +348,30 @@ void konsultasi(){
 			system("cls");
 			w=0;
 			do {
-			cout<<"\n\t\t INPUT KELUHAN "<<w+1<<endl;
-			cout<<"\t1. Demam "<<endl;
-			cout<<"\t2. Sakit perut"<<endl;
-			cout<<"\t3. Flu biasa"<<endl;
-			cout<<"\t4. Tenggorokan sakit "<<endl;
-			cout<<"\t5. Perut kembung"<<endl;
-			cout<<"\t6. Batuk kering atau mendahak"<<endl;
-			cout<<"\t7. Nyeri saat menelan "<<endl;
-			cout<<"\t8. Perut kembung"<<endl;
-			cout<<"\t9. Pilek"<<endl;
-			cout<<"\t10. Sesak napas"<<endl;
-			cout<<"\t11. Rasa Mulas"<<endl;
-			cout<<"\t12. Buang air besar 3 kali sehari"<<endl;
-			cout<<"\t13. Buang air besar disertai darah atau lendir"<<endl;
-			cout<<"\t14. Kelelahan"<<endl;
-			cout<<"\t15. Penurunan berat badan secara signifikan"<<endl;
-			cout<<"Masukkan keluhan : "; cin>>keluhan[w];
-			cout<<"Apakah ada keluhan lain (y/t)? "; cin>>a;
+					cout<<"\n";
+					cout<<"\t\t\t\t\t________________________"<<endl;
+					cout<<"\t\t\t\t\t|       KELUHAN        |"<<endl;
+					cout<<"\t\t\t\t\t|______________________|"<<endl;
+					cout<<"_____________________________________________________________________________________________________"<<endl;
+					cout<<"|    KODE  |         GEJALA         |     KODE   |    GEJALA     |      KODE     |       GEJALA     |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|"<<endl;
+					cout<<"|    A     |         DEMAM          |      B     |   FLU BIASA   |       C       |   SAKIT PERUT    |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|"<<endl;
+					cout<<"|    A     |   TENGGROKAN SAKIT     |      B     |     DEMAM     |       C       | PERUT KEMBUN     |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|"<<endl;
+					cout<<"|    A     | NYERI SAAT MENENALAN   |      B     |  BATUK KERING |       C       |  SERING BAB      |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|"<<endl;
+					cout<<"|    A     |     BATUK KERING       |      B     |     PILEK     |       C       |   KELELAHAN      |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|"<<endl;
+					cout<<"|    A     |         PILEK          |      B     |  SESAK NAPAS  |       C       | PENURUNAN BERAT  |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|"<<endl;
+					cout<<"|    A     |                        |      B     |               |       C       |                  |"<<endl;
+					cout<<"|__________|________________________|____________|_______________|_______________|__________________|\n\n"<<endl;
+			cout<<"Masukkan kode keluhan : "; cin>>keluhan[w];
+			cout<<"Apakah ada keluhan lain (y/t)? "; cin>>x;
 			w=w+1;
 			system("cls");
-			} while (a == 'y' || a == 'Y');
+			} while (x == 'y' || x == 'Y');
 			
 			system("pause");
 			system("cls");
@@ -453,6 +457,15 @@ void konsultasi(){
  	
 }
 
+//untuk menu call center
+void callcenter(){
+		cout<<"\n\t\t\t\t______________________________________________\n"<<endl;
+		cout<<"  \t\t\t\t|                  CAll CENTER               |\n"<<endl;
+		cout<<"  \t\t\t\t|____________________________________________|\n\n"<<endl;
+		cout<<" Jalan Gunung Anyar VII, Surabaya, Indonesia"<<endl;
+		cout<<" Phone : (+62 81)234567"<<endl;
+		cout<<" Email : info@rsemergency"<<endl;	
+}
 //untuk menu rawat
 void rawat(){	
 	cout<<"\n\t\t\t\t______________________________________________\n"<<endl;
@@ -469,12 +482,12 @@ void rawat(){
 			cout<<"\n\t\t\t|                                              |"<<endl;
 			cout<<"\n\t\t\t|                   RAWAT INAP                 |"<<endl;
 			cout<<"\n\t\t\t|______________________________________________|"<<endl;
-			cout<<"\n\t\t\t| • Jenis kamar                                |"<<endl;
-			cout<<"\n\t\t\t| • Waktu rawat                                |"<<endl;
-			cout<<"\n\t\t\t| • Jenis penyakit                             |"<<endl;
-			cout<<"\n\t\t\t| • Data pasien                                |"<<endl;
-			cout<<"\n\t\t\t| • Data pemesan                               |"<<endl;
-			cout<<"\n\t\t\t| • Biaya                                      |"<<endl;
+			cout<<"\n\t\t\t| Â• Jenis kamar                                |"<<endl;
+			cout<<"\n\t\t\t| Â• Waktu rawat                                |"<<endl;
+			cout<<"\n\t\t\t| Â• Jenis penyakit                             |"<<endl;
+			cout<<"\n\t\t\t| Â• Data pasien                                |"<<endl;
+			cout<<"\n\t\t\t| Â• Data pemesan                               |"<<endl;
+			cout<<"\n\t\t\t| Â• Biaya                                      |"<<endl;
 			cout<<"\n\t\t\t|______________________________________________|\n"<<endl;
 			cout<<"Tekan Y untuk lanjut :"<<endl;
 			cin>>ver;
@@ -510,11 +523,11 @@ void rawat(){
 			cout<<"\n\t\t\t|                                              |"<<endl;
 			cout<<"\n\t\t\t|                  RAWAT JALAN                 |"<<endl;
 			cout<<"\n\t\t\t|______________________________________________|"<<endl;
-			cout<<"\n\t\t\t| • Waktu rawat                                |"<<endl;
-			cout<<"\n\t\t\t| • Jenis penyakit                             |"<<endl;
-			cout<<"\n\t\t\t| • Data pasien                                |"<<endl;
-			cout<<"\n\t\t\t| • Data pemesan                               |"<<endl;
-			cout<<"\n\t\t\t| • Biaya                                      |"<<endl;
+			cout<<"\n\t\t\t| Â• Waktu rawat                                |"<<endl;
+			cout<<"\n\t\t\t| Â• Jenis penyakit                             |"<<endl;
+			cout<<"\n\t\t\t| Â• Data pasien                                |"<<endl;
+			cout<<"\n\t\t\t| Â• Data pemesan                               |"<<endl;
+			cout<<"\n\t\t\t| Â• Biaya                                      |"<<endl;
 			cout<<"\n\t\t\t|______________________________________________|"<<endl;
 			cout<<"Tekan Y untuk lanjut :";
 			cin>>ver;
