@@ -504,13 +504,13 @@ void rawat_pasien(){
 				    cout<<"|                         RAWAT INAP                        |"<<endl;
 				    cout<<"|===========================================================|"<<endl;
 				    cout<<"|                                                           |"<<endl;
-				    cout<<"|  •    Jenis penyakit (5)                                  |"<<endl;
-				    cout<<"|  •    Dokter (5)                                          |"<<endl;
-				    cout<<"|  •    Jenis kamar (VVIP, VIP, GENERAL )                   |"<<endl;
-				    cout<<"|  •    Lama waktu rawat inap                               |"<<endl;
-				    cout<<"|  •    Data pasien                                         |"<<endl;
-				    cout<<"|  •    Biaya dokter, biaya kamar, biaya obat               |"<<endl;
-				    cout<<"|  •    Data obat (4 penyakit)                              |"<<endl;
+				    cout<<"|  Â•    Jenis penyakit (5)                                  |"<<endl;
+				    cout<<"|  Â•    Dokter (5)                                          |"<<endl;
+				    cout<<"|  Â•    Jenis kamar (VVIP, VIP, GENERAL )                   |"<<endl;
+				    cout<<"|  Â•    Lama waktu rawat inap                               |"<<endl;
+				    cout<<"|  Â•    Data pasien                                         |"<<endl;
+				    cout<<"|  Â•    Biaya dokter, biaya kamar, biaya obat               |"<<endl;
+				    cout<<"|  Â•    Data obat (4 penyakit)                              |"<<endl;
 				    cout<<"|===========================================================|"<<endl<<endl;
 				    cout<<"Tekan Y untuk melanjukan : ";
 				    cin>>lanjut;
@@ -1046,11 +1046,11 @@ void rawat_pasien(){
 				        {
 				        system("cls");
 				        cout<<endl;
-				        cout<<"*====================================================================================*"<<endl;
-				        cout<<"|                            RUMAH SAKIT PREMIER INDONESIA                           |"<<endl;
-				        cout<<"|                Jl.Air Sagu 2 No.21 Ulujami-Pesanggrahan, Jakarta Selatan           |"<<endl;
-				        cout<<"|                  email: RSPI@jakselprov.go.id   Website: www.rspi.com              |"<<endl;
-				        cout<<"|------------------------------------------------------------------------------------|"<<endl;
+					cout<<"\t===================================================================================== "<<endl;
+					cout<<"\t|                           RUMAH SAKIT UPN VETERAN HEALTHY                          |"<<endl;
+					cout<<"\t|    Jl. Rungkut Madya No.1, Gn. Anyar, Kec. Gn. Anyar, Kota SBY, Jawa Timur 60294   |"<<endl;
+					cout<<"\t|            email: RSUVH@gmail.com  Website: www.upnveteranhealty.ac.id             |"<<endl;
+					cout<<"\t-------------------------------------------------------------------------------------"<<endl<<endl;
 				        cout<<"                               SURAT KETERANGAN PERAWATAN                            "<<endl;
 				        cout<<endl;
 				        cout<<"  Rincian Pemesanan"<<endl;
